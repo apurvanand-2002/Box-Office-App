@@ -4,6 +4,7 @@ const SearchForm = ({ onSearch }) => {
 
     const [searchStr, setsearchStr] = useState('');
     const [searchOption, setSearchOption] = useState('shows');
+
     const onSearchInputChange = ev => {
         setsearchStr(ev.target.value);
     };
