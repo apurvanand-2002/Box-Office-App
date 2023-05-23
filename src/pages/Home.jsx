@@ -5,8 +5,11 @@ import SearchForm from '../Components/SearchForm';
 import ShowGrid from '../Components/shows/ShowGrid';
 import ActorsGrid from '../Components/actors/ActorsGrid';
 
+
+
 const Home = () => {
     const [filter, setFilter] = useState('')
+
 
     const { data: apiData, error: apiDataError } = useQuery({
         queryKey: ['todos', filter],
