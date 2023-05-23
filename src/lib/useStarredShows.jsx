@@ -18,9 +18,7 @@ const starredShowsReducer = (currentStarred, action) => {
         case 'STAR':
             return currentStarred.concat(action.showId);
         case 'UNSTAR':
-            return currentStarred.filter((showId) => {
-                showId !== action.showId
-            })
+            return currentStarred.filter((showId) => showId !== action.showId)
         default:
             return currentStarred;
     }
