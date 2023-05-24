@@ -12,10 +12,6 @@ const ActorCard = ({ name, image, gender, country, birthday, deathday }) => {
 
         {!!birthday && <p>Born {birthday}</p>}
         <p>{deathday ? `Died ${deathday}` : `Alive`}</p>
-        <div>
-            <Link to="/">Read more</Link>
-            <button type="button">Star me</button>
-        </div>
 
     </div>;
 }

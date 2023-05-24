@@ -4,7 +4,7 @@ import { searchForShows, searchForPeople } from './../api/tvmaze';
 import SearchForm from '../Components/SearchForm';
 import ShowGrid from '../Components/shows/ShowGrid';
 import ActorsGrid from '../Components/actors/ActorsGrid';
-
+import styled, { css } from 'styled-components'
 
 
 const Home = () => {
