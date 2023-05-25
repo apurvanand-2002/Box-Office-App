@@ -1,5 +1,6 @@
 import { useStarredShows } from "../../lib/useStarredShows";
 import ShowCard from "./ShowCard";
+import { FlexGrid } from '../common/FlexGrid';
 
 
 const ShowGrid = ({ shows }) => {
@@ -14,7 +15,7 @@ const ShowGrid = ({ shows }) => {
             dispatchStarred({ type: "STAR", showId });
         }
     }
-    return <div>
+    return <FlexGrid>
         {
             shows.map(data => <ShowCard
                 id={data.show.id}
@@ -27,6 +28,6 @@ const ShowGrid = ({ shows }) => {
             />
             )
         }
-    </div>
+    </FlexGrid>
 }
 export default ShowGrid;
